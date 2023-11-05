@@ -16,6 +16,17 @@ html {
   scroll-behavior: smooth;
 }
 
+/* NAUJAS FIXAS */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/*  */
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -302,7 +313,7 @@ HIGHLIGHTS
   background: url("./assets/wave.svg");
   content: "";
   position: absolute;
-  width: 101vw;
+  width: 100vw; /* keista */
   height: 12vw;
   left: 0;
   z-index: 1;
@@ -323,6 +334,7 @@ HIGHLIGHTS
 .highlight__wrapper {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .highlight {
@@ -781,7 +793,7 @@ select {
   padding: 12px 0;
 }
 
-/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+
 @media (max-width: 768px) {
   .header__description {
     padding: 0 24px;
@@ -816,7 +828,7 @@ select {
 }
 
 
-/* SMALL PHONES, LARGE SMARTPHONES */
+
 @media (max-width: 550px) {
   .btn__menu {
     display: block;
@@ -841,3 +853,4 @@ select {
     padding-left: 0;
   }
 }
+
